@@ -134,7 +134,9 @@ module MarkAsAnything
       end
       
       def clear_markable_cache(marker)
-        @_markable_cache[marker] = {} rescue nil
+        @_markable_cache[marker] = {}
+      rescue
+        nil
       end
     end
     

@@ -62,6 +62,10 @@ class MarkAsAnythingTest < ActiveSupport::TestCase
     end
   end
   
+  test "unmark all from nothing should not raise error" do
+    @message.unmark_as_read_by_all
+  end
+  
   test "reverse read checking (actor to object)" do
     assert !@user.has_read?(@message)
     @message.mark_as_read_by(@user)
