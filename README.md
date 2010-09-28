@@ -45,4 +45,4 @@ Obvious Limitations
   require something like `unread_messages = Message.all - Message.read_by(@user)`. Everybody's situation is different so it's
   difficult to account for all cases.
 
-Copyright (c) 2010 Ebony Charlton, released under the MIT license SyntaxError
+Copyright (c) 2010 Ebony Charlton, released under the MIT license
